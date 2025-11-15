@@ -1,9 +1,13 @@
 HIKVISION NVR TFTP BRICK FIX
 
-**INFO:** When your HIK device bricks it defaults itself, no matter what password you put into the web UI , you won't get in. The only way to fix this is to host a new firmware file to the NVR or camera, it then hunts for this TFTP on first boot.
+Thanks to Scott Lamb for the original code, this is an extension of his work plus a lot of newer updates so it works on Python3.
 
-If you're running MAC or Windows download Python first and install from their website.
+**INFO:** When your HIK device bricks itself it defaults itself to an emergency state, stop freaking out there is a fix. The only way to fix this is to host a new firmware file to the NVR or camera from your computer.
+
+If you're running MAC or Windows, download Python first and install from their website. https://www.python.org/downloads/
 Next download the "hikvision_unbrick.py" python script file above and a stable version of firmware for your NVR or camera before it was bricked. Most likely this will be the same version that is printed on the box it came with or the previous MAJOR version to the firmware that you just used to brick your device. v4.61 is known to brick NVR's.
+
+**IMPORTANT:** Make sure the firmware version your download is SPECIFIC to your region.
 
 **IMPORTANT:** Change your PC or laptop's IP address to 192.0.0.128 now.
 
